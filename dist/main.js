@@ -1,1 +1,1 @@
-console.log(123);
+(()=>{const e=document.getElementById("menu-logo"),n=document.getElementById("menu-container"),t=document.getElementById("close-Btn");e&&e.addEventListener("click",(()=>{n.classList.remove("hidden")})),t&&t.addEventListener("click",(()=>{n.classList.add("hidden")}))})();
