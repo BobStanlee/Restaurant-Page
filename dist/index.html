@@ -5,10 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <div id="content">
-        <h1 class="font-bold text-4xl text-red-500">Hello world</h1>
+    <div id="content" class="font-body relative">
+        <header class="fixed top-0 left-0 flex justify-between"><!-- Header Goes in Here -->
+            <div class="logo">
+                Stadle
+            </div>
+
+            <div class="menu"><!-- Menu Icon Goes In Here -->
+                <div id="menu-logo">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </div>
+
+                <div><!-- Menu Container Goes In here -->
+                    <ul id="menu-items">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+
+                    <div id="close-Btn">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
     </div>
     <script src="./main.js"></script>
 </body>
