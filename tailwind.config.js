@@ -6,6 +6,12 @@ module.exports = {
       fontFamily: {
         body: ['Poppins', 'sans-serif'],
       },
+      colors: {
+        backgroundPrimary: '#F8E8E1',
+        BackgroundWhite: '#FAFAFA',
+        primaryYellow: '#EEB949',
+        primaryred: '#D63A1F',
+      },
     },
   },
   plugins: [],
