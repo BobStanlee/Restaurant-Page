@@ -9,20 +9,23 @@
 </head>
 <body>
     <div id="content" class="font-body">
-        <header class="fixed top-0 left-0 w-full flex justify-between items-center p-5 bg-backgroundPrimary"><!-- Header Goes in Here -->
-            <div id="logo" class="font-black text-2xl">
+        <div><!-- Home Screen -->
+
+        </div>
+        <header class="fixed top-0 left-0 w-full flex justify-between items-center p-5 bg-backgroundPrimary lg:p-10"><!-- Header Goes in Here -->
+            <div id="logo" class="font-black text-2xl lg:text-4xl">
                 Stadle
             </div>
 
-            <div class="menu"><!-- Menu Icon Goes In Here -->
-                <div id="menu-logo">
+            <div class="menu self-end"><!-- Menu Icon Goes In Here -->
+                <div id="menu-logo" class="lg:hidden">
                     <span class="material-symbols-outlined hover:text-red-500 transition-all">
                         menu
                     </span>
                 </div>
 
-                <div id="menu-container" class="flex flex-col gap-5 absolute top-0 right-0 bg-white p-5 shadow-lg transition-all hidden"><!-- Menu Container Goes In here -->
-                    <ul id="menu-items" class="grid gap-2">
+                <div id="menu-container" class="flex flex-col gap-5 absolute top-0 right-0 bg-white p-5 shadow-lg transition-all hidden lg:flex lg:flex-row lg:bg-transparent lg:rounded-none lg:shadow-none lg:items-center lg:static"><!-- Menu Container Goes In here -->
+                    <ul id="menu-items" class="grid gap-2 lg:flex lg:gap-10">
                         <li class="group hover:text-red-500 relative">
                             <a href="#">
                                 Home
@@ -47,7 +50,7 @@
                             </a>
                             <div class="absolute left-0 bg-red-500 h-1 w-6 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></div>
                         </li>
-                        <li class="group hover:text-red-500 relative">
+                        <li class="group hover:text-red-500 relative lg:hidden">
                             <a href="#">
                                 Sign Up
                             </a>
@@ -55,20 +58,28 @@
                         </li>
                     </ul>
 
-                    <div id="close-Btn" class="border-red-500 border-2 self-center p-1 flex justify-center items-center rounded-full group hover:border-black">
+
+                    <div id="close-Btn" class="border-red-500 border-2 self-center p-1 flex justify-center items-center rounded-full group hover:border-black lg:hidden">
                         <span class="material-symbols-outlined group-hover:text-red-500 transition-all">
                             close
                         </span>
                     </div>
                 </div>
             </div>
+
+            <div class="hidden lg:block"><!-- Login Sign Up buttons -->
+                <ul class="text-primaryred flex gap-10 items-center">
+                    <li><a href="#">Login</a></li>
+                    <li class="border-primaryred border-2 px-6 py-2 rounded-full"><a href="#">Sign Up</a></li>
+                </ul>
+            </div>
         </header>
         
-        <div id="hero" class="flex flex-col-reverse h-screen bg-backgroundPrimary">
+        <div id="hero" class="flex flex-col pt-20 xr:h-screen bg-backgroundPrimary lg:grid grid-cols-2 lg:items-center lg:justify-center">
             <div class="flex flex-col items-center justify-center p-5"><!-- Left Content -->
                 <h2 class="font-black text-5xl/snug text-primaryred mb-10">All Fast Food Is Available at Stadle</h2>
 
-                <img src="./img/Herofood.png" alt="" class="mb-10 ">
+                <img src="./img/Herofood.png" alt="" class="mb-10 lg:hidden">
 
 
                 <div class="flex gap-5 justify-center items-center mb-20"><!-- Just a click away container -->
@@ -99,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="m-5 w-80 h-80 hidden"><!-- Right Content -->
+            <div class="m-5 w-80 h-80 hidden lg:block"><!-- Right Content -->
                 <img src="./img/Herofood.png" alt="">
             </div>
         </div>

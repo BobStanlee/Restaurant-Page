@@ -12,6 +12,9 @@ module.exports = {
         primaryYellow: '#EEB949',
         primaryred: '#D63A1F',
       },
+      screens: {
+        'xr': '390px',
+      },
     },
   },
   plugins: [],
