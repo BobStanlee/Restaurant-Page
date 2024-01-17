@@ -64,20 +64,34 @@
             </div>
         </header>
         
-        <div id="hero">
-            <div><!-- Left Content -->
-                <h2>All Fast Food Is Available at Stadle</h2>
+        <div id="hero" class="pt-20 flex flex-col bg-backgroundPrimary">
+            <div class="flex flex-col items-center justify-center p-5"><!-- Left Content -->
+                <h2 class="font-black text-5xl/snug mt-20 text-primaryred mb-20">All Fast Food Is Available at Stadle</h2>
 
-                <div><!-- Just a click away container -->
-                    <img src="" alt="profile">
-                    <p>We are just a click away when you crave for delicious fast food</p>
+                <div class="flex gap-5 justify-center items-center mb-20"><!-- Just a click away container -->
+                    <img src="./img/Profile1.png" alt="profile" class="w-14 h-14">
+                    <p class="text-gray-500">We are just a click away when you crave for delicious fast food</p>
                 </div>
 
-                <div><!-- Hero buttons -->
-                    <button>
-                        <div>
-                            
+                <div class="flex items-center justify-center gap-10 mb-20"><!-- Hero buttons -->
+                    <button class="flex gap-4 items-center justify-center bg-primaryred p-4 rounded-full"><!-- Buy Now button -->
+                        <div class="bg-primaryYellow p-4 flex items-center justify-center rounded-full">
+                            <span class="material-symbols-outlined">
+                                shopping_bag
+                            </span>
                         </div>
+                        <span class="text-white font-bold text-xl">Buy Now</span>
+                    </button>
+
+                    <button class="flex gap-4 items-center justify-center"><!-- How To Order Button -->
+                        <div class="bg-primaryred p-4 rounded-full relative">
+                            <div class="bg-white p-4 rounded-full flex items-center justify-center shadow-md">
+                                <span class="material-symbols-outlined text-primaryYellow">
+                                    play_arrow
+                                </span>
+                            </div>
+                        </div>
+                        <span class="font-bold text-xl">How To Order</span>
                     </button>
                 </div>
             </div>
