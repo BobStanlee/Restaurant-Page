@@ -670,6 +670,10 @@ video {
   width: 100%;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .origin-left{
   transform-origin: left;
 }
