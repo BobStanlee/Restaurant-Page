@@ -28,11 +28,8 @@ function closeOpenMenu() {
 // Call CloseOpenMenu Function
 closeOpenMenu();
 
-// When the page is loading
-document.addEventListener('DOMContentLoaded', function() {
-    // Your function code here
-    console.log('Page has loaded!');
-});
+// When the page is loading call populateHome
+document.addEventListener('DOMContentLoaded', populateHome());
 
 
 // Function to handle tabs Switching
