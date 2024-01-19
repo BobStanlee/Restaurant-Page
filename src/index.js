@@ -1,3 +1,5 @@
+import populateHome from "./home";
+
 // Get menu icon, menu container and close btn
 const menuIcon = document.getElementById('menu-logo'),
       menuContainer = document.getElementById('menu-container'),
@@ -25,3 +27,7 @@ function closeOpenMenu() {
 
 // Call CloseOpenMenu Function
 closeOpenMenu();
+
+
+// Function to handle tabs Switching
+populateHome();
