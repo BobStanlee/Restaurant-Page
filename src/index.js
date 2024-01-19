@@ -28,6 +28,37 @@ function closeOpenMenu() {
 // Call CloseOpenMenu Function
 closeOpenMenu();
 
+// When the page is loading
+document.addEventListener('DOMContentLoaded', function() {
+    // Your function code here
+    console.log('Page has loaded!');
+});
+
 
 // Function to handle tabs Switching
-populateHome();
+const handletabs = () => {
+    const homeTab = document.getElementById('home-tab');
+    const menuTab = document.getElementById('menu-tab');
+    const aboutTab = document.getElementById('about-tab');
+    const content = document.getElementById('content');
+
+    // listen for a click on Home Tab
+    homeTab.addEventListener('click', () => {
+        content.innerHTML = ''; // empty content
+        populateHome(); // Call populate Home module
+    })
+    
+    // listen for a click on Menu Tab
+    menuTab.addEventListener('click', () => {
+        content.innerHTML = ''; // empty content
+        populateMenu(); // Call populate Menu module
+    })
+
+    // listen for a click on About Tab
+    aboutTab.addEventListener('click', () => {
+        content.innerHTML = ''; // empty content
+        populateAbout(); // Call populate About module
+    })
+}
+
+handletabs();
