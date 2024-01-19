@@ -46,7 +46,6 @@ const populateHome = () => {
 </div>`;
 
   // Populate home document structure in content
-  console.log(home);
   content.innerHTML = home;
 };
 

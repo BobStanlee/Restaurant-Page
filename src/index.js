@@ -1,4 +1,5 @@
 import populateHome from "./home";
+import populateMenu from "./menu";
 
 // Get menu icon, menu container and close btn
 const menuIcon = document.getElementById('menu-logo'),
